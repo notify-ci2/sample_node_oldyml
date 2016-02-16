@@ -29,7 +29,7 @@ before_script:
 
 # Running the tests with grunt
 script:
-  - grunt
+  - grunt hju
 
 # Tell istanbul to generate a coverage report
 after_script:
@@ -37,4 +37,5 @@ after_script:
   - ./node_modules/.bin/istanbul report cobertura --dir  shippable/codecoverage/
   
 notifications:
-  email: false
+  email: 
+    - notify_ci34@yahoo.in
